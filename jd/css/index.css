@@ -1,0 +1,225 @@
+body {
+  background-color: #cccccc;
+}
+.jd-layout {
+  max-width: 640px;
+  min-width: 320px;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+/*头部*/
+.jd-header {
+  position: fixed;
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  height: 40px;
+  background-color: rgba(222, 24, 27, 0);
+  padding: 0 50px 0 75px;
+  z-index: 999;
+}
+.jd-header form {
+  /*输入框Form*/
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 5px 0;
+}
+.jd-header form .search-icon {
+  /*输入框的图标*/
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background: url(../images/jd-sprites.png) no-repeat -59px -109px;
+  background-size: 200px 200px;
+}
+.jd-header form input {
+  /*输入框*/
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  padding-left: 40px;
+}
+.jd-header .logo {
+  /*logo*/
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 56px;
+  height: 21px;
+  background: url(../images/jd-sprites.png) no-repeat 0 -109px;
+  background-size: 200px 200px;
+}
+.jd-header .login {
+  /*登录*/
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+}
+/*轮播图*/
+.jd-banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.jd-banner ul {
+  /*图片*/
+  width: 1000%;
+  transform: translateX(-10%);
+}
+.jd-banner ul li {
+  width: 10%;
+  float: left;
+}
+.jd-banner ul li img {
+  width: 100%;
+}
+.jd-banner ol {
+  /*小圆点*/
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+}
+.jd-banner ol li {
+  float: left;
+  margin: 0 5px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.jd-banner ol li.current {
+  background-color: white;
+}
+/*导航*/
+.jd-nav ul {
+  padding: 20px 0;
+}
+.jd-nav ul li {
+  text-align: center;
+  float: left;
+  width: 20%;
+  margin-bottom: 10px;
+}
+.jd-nav ul li img {
+  width: 40px;
+}
+/*快报*/
+.jd-news {
+  position: relative;
+  height: 30px;
+  background-color: #dfdbdb;
+  padding: 0 50px 0 75px;
+}
+.jd-news .new-title {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 73px;
+}
+.jd-news .more {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+}
+.jd-news div {
+  overflow: hidden;
+}
+.jd-news div ul {
+  height: 30px;
+  line-height: 30px;
+  padding-left: 5px;
+  transition: all 0.2s;
+}
+/*秒杀*/
+.jd-sk .sk-title {
+  /*秒杀标题*/
+  height: 30px;
+  line-height: 30px;
+}
+.jd-sk .sk-title .logo {
+  width: 18px;
+  height: 22px;
+  margin-top: 4px;
+  background: url(../images/jd-sprites.png) no-repeat -84px -109px;
+  background-size: 200px 200px;
+}
+.jd-sk .sk-title .text {
+  color: #F23030;
+  margin: 0 10px;
+}
+.jd-sk .sk-title .time {
+  margin-top: 6px;
+}
+.jd-sk .sk-title .time span {
+  text-align: center;
+  float: left;
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  margin: 0 3px;
+  color: #fff;
+  line-height: 18px;
+}
+.jd-sk .sk-title .time span:nth-child(even) {
+  background-color: transparent;
+  width: 6px;
+  color: black;
+  margin: 0;
+}
+.jd-sk .sk-main {
+  /*秒杀主体*/
+  height: 110px;
+  padding-top: 5px;
+  overflow: auto;
+}
+.jd-sk .sk-main ul {
+  width: 880px;
+}
+.jd-sk .sk-main ul li {
+  float: left;
+  width: 88px;
+  text-align: center;
+  border-right: 1px solid #cccccc;
+}
+.jd-sk .sk-main ul li a img {
+  width: 70%;
+}
+.jd-sk .sk-main ul li a p:nth-child(2) {
+  color: #F23030;
+  font-weight: 700;
+}
+.jd-sk .sk-main ul li a p:nth-child(3) {
+  text-decoration: line-through;
+  color: #ccc;
+}
+/*主会场*/
+.jd-major a {
+  float: left;
+  width: 33.33%;
+}
+.jd-major a img {
+  width: 100%;
+}
+/*商品*/
+.jd-product ul li a {
+  float: left;
+  width: 50%;
+}
+.jd-product ul li a img {
+  width: 100%;
+}
+.jd-product ul li:nth-child(1) a {
+  width: 33.33%;
+}

@@ -1,0 +1,212 @@
+body,
+html {
+  height: 100%;
+}
+body {
+  background-color: #cccccc;
+}
+.layout {
+  position: relative;
+  height: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+/*头部*/
+.car-header {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 44px;
+  background-image: linear-gradient(#eee, #bbb);
+  padding: 0 44px;
+}
+.car-header h2 {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+}
+.car-header .back,
+.car-header .menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 44px;
+  height: 44px;
+  background: url(../images/jd-sprites.png) no-repeat -21px 0;
+  background-size: 200px 200px;
+  padding: 11px;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+.car-header .menu {
+  left: auto;
+  top: 0;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  background: url(../images/jd-sprites.png) no-repeat -60px 0;
+  background-size: 200px 200px;
+  padding: 11px;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+/*安全*/
+.car-safe {
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  border-bottom: 1px #cccccc solid;
+}
+.car-safe p {
+  display: inline-block;
+  padding-left: 33px;
+  background: url(../images/safe_icon.png) no-repeat 7px 7px;
+  background-size: 18px;
+}
+/*商品*/
+.car-product {
+  margin-top: 10px;
+}
+.car-product .chk {
+  position: absolute;
+  left: 7px;
+  top: 7px;
+  width: 34px;
+  height: 34px;
+  background: url(../images/jd-sprites.png) no-repeat -180px -89px;
+  background-size: 200px;
+}
+.car-product .p-title {
+  position: relative;
+  height: 34px;
+  line-height: 32px;
+  border-bottom: 1px #cccccc solid;
+  padding-left: 34px;
+  font-size: 14px;
+  color: #b3b2b2;
+}
+.car-product .p-title .logo {
+  width: 20px;
+  height: 20px;
+  margin-top: 9px;
+  margin-right: 5px;
+  background: url(../images/jd-sprites.png) no-repeat;
+  background-size: 200px;
+}
+.car-product .p-title .free {
+  margin-right: 5px;
+}
+.car-product .p-main .item {
+  width: 100%;
+  position: relative;
+  padding-left: 34px;
+  height: 100px;
+  border-bottom: 1px #cccccc solid;
+}
+.car-product .p-main .item .content {
+  height: 100px;
+  padding: 10px;
+}
+.car-product .p-main .item .content .detail {
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+.car-product .p-main .item .content .info {
+  height: 100%;
+  overflow: hidden;
+  padding: 0 10px;
+}
+.car-product .p-main .item .content .info .text {
+  font-size: 14px;
+  line-height: 16px;
+  height: 32px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.car-product .p-main .item .content .info .option {
+  margin-top: 18px;
+}
+.car-product .p-main .item .content .info .option .num > * {
+  text-align: center;
+  line-height: 28px;
+  float: left;
+  width: 36px;
+  height: 30px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+}
+.car-product .p-main .item .content .info .option .num input {
+  border-left: none;
+  border-right: none;
+  cursor: none;
+}
+.car-product .p-main .item .content .info .del {
+  width: 18px;
+  height: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.car-product .p-main .item .content .info .del .up {
+  float: left;
+  width: 18px;
+  height: 4px;
+  background: url(../images/delete_up.png) no-repeat;
+  background-size: 18px 4px;
+  transition: all 0.5s;
+  transform-origin: right center;
+}
+.car-product .p-main .item .content .info .del .down {
+  float: right;
+  width: 18px;
+  height: 18px;
+  background: url(../images/delete_down.png) no-repeat;
+  background-size: 18px 18px;
+  margin-top: -3px;
+}
+.car-product .p-main .item .content .info .open {
+  transform: rotate(20deg);
+}
+/*模态框*/
+.win-box {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+.win-box .del-box {
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  width: 80%;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+}
+.win-box .del-box p {
+  font-size: 20px;
+  line-height: 80px;
+  border-bottom: 1px solid #cccccc;
+}
+.win-box .del-box .btn-box {
+  margin-top: 30px;
+}
+.win-box .del-box .btn-box a {
+  width: 45%;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+.win-box .del-box .btn-box .ok {
+  background-color: red;
+  color: white;
+}
