@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>知乎-有问题上知乎</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <form action="">
+            <div class="erweima">
+                <img src="img/11.png" alt="">
+            </div>
+            <div class="login-haeder">
+                <ul>
+                    <li class="skybor">免密码登录</li>
+                    <li>密码登录</li>
+                </ul>
+            </div class="login-haeder">
+
+            <div class="longin">
+                <div class="nullpass">
+
+                    <div class="lis_1">
+                        <select name="" id="">
+                            <option value="">中国 +86</option>
+                            <option value="">美国 +16</option>
+                            <option value="">日本 +54</option>
+                        </select>
+                        <input type="text" name="" id="" placeholder="手机号">
+                    </div>
+                    <div class="lis_2">
+                        <input type="text" placeholder="请输入6位短信验证码">
+                        <a href="javascript:;">获取验证码</a>
+                    </div>
+                    <div class="lis_3">
+                        <span>接收语音验证码</span>
+                    </div>
+                </div>
+
+                <div class="passlogin">
+                    <div class="lis_2">
+                        <input type="text" placeholder="请输入邮箱或账号">
+                    </div>
+                    <div class="lis_2">
+                        <input type="password" placeholder="请输入密码" class="passhwo">
+                        <i class="iconfont icon-xianshimima toshow"></i>
+                        <!-- <a href="javascript:;">获取验证码</a> -->
+                    </div>
+                    <div class="lis_3">
+                        <span>忘记密码？</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="btn">注册/登陆</button>
+            <div class="loginfooter">
+                <p>未注册手机验证后自动登录</p>
+                <p>注册即代表同意《知乎协议》《隐私保护指引》</p>
+                <a href="javascript:;">注册机构号</a>
+            </div>
+        </form>
+        <!-- 遮罩层 -->
+        <div class="login-two">
+            <div class="erweima">
+                <img src="img/iphone.png" alt="">
+            </div>
+            <h2>扫码登录</h2>
+            <img src="img/twoimg.png" alt="">
+            <p>打开 <span style="color: cornflowerblue;cursor: pointer;">知乎App</span></p>
+            <p>在「我的」页面右上角打开扫一扫</p>
+        </div>
+
+    </div>
+    <div class="link">
+        <span>社交账号登录</span>
+        <i class="iconfont icon-weixin"></i>
+        <i class="iconfont icon-QQ"></i>
+        <i class="iconfont icon-weibo"></i>
+
+    </div>
+    <div class="down">
+        下载知乎 App
+    </div>
+
+
+    <script>
+        $('.login-haeder ul li').on('click', function() {
+            //删除当前兄弟的类
+            $(this).siblings().removeClass();
+            //添加类
+            $(this).addClass('skybor')
+                //获得当前li 的索引号
+            var index = $(this).index();
+            //隐藏
+            $('.longin>div').eq(index).siblings().hide();
+            //通过索引号 找到跟li 对应的 div
+            $('.longin>div').eq(index).show(); //显示点击当前的div
+        })
+        var flag = 0 //显示密码的切换
+        $('.toshow').on('click', function() {
+                // $(this).removeClass('icon-xianshimima');
+                // $(this).addClass('icon-yincang');
+                // $(this).toggleClass('icon-yincang')
+                if (flag) {
+                    $(this).removeClass('icon-xianshimima')
+                    $(this).addClass('icon-yincang');
+                    flag = 0;
+                    $(this).siblings('input').prop('type', 'texe')
+                } else {
+                    $(this).removeClass('icon-yincang')
+                    $(this).addClass('icon-xianshimima');
+                    flag = 1;
+                    $(this).siblings('input').prop('type', 'password')
+                }
+            })
+            //切换二维码登录
+        var flag = 1
+        $('.erweima').on('click', function() {
+            $('form').toggle();
+            $('.login-two').toggle();
+        })
+    </script>
+
+
+</body>
+
+</html>

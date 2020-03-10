@@ -1,0 +1,291 @@
+/* @font-face {
+    font-family: 'iconfont';
+    src: url('iconfont.eot');
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'), url('iconfont.woff2') format('woff2'), url('iconfont.woff') format('woff'), url('iconfont.ttf') format('truetype'), url('iconfont.svg#iconfont') format('svg');
+} */
+
+
+/* .iconfont {
+    font-family: "iconfont";
+    font-size: 20px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+}
+
+.main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(184, 229, 248);
+    background-image: url(https://static.zhihu.com/heifetz/assets/sign_bg.db29b0fb.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    z-index: -1;
+}
+
+.logo {
+    width: 125px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.logo img {
+    width: 125px;
+    height: 80px;
+}
+
+form {
+    position: relative;
+    background-color: white;
+    height: 330px;
+    width: 360px;
+    margin: 20px auto;
+    padding: 0 15px;
+    box-shadow: 1px 1px 1px azure;
+    /* display: none; */
+}
+
+.login-haeder {
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-haeder ul>li {
+    float: left;
+    margin-right: 70px;
+    margin-bottom: 20px;
+    padding: 15px 0;
+    font-size: 17px;
+}
+
+.skybor {
+    font-weight: 700;
+    border-bottom: 2px rgb(0, 132, 255) solid;
+}
+
+.nullpass {
+    width: 100%;
+    clear: both;
+    height: 25px;
+    /* display: none; */
+}
+
+.lis_1 {
+    position: relative;
+    border-bottom: 1px #cccccc solid;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.lis_1::before {
+    content: '|';
+    position: absolute;
+    top: 4px;
+    left: 85px;
+    color: #cccccc;
+    display: block;
+}
+
+.lis_1 select {
+    height: 29px;
+    vertical-align: middle;
+    border: none;
+    margin-right: 20px;
+    color: #999696;
+}
+
+.lis_1 input,
+.lis_2 input {
+    height: 25px;
+    vertical-align: middle;
+    border: none;
+}
+
+.lis_2 {
+    border-bottom: 1px #cccccc solid;
+    padding: 4.3px 0;
+    margin-bottom: 10px;
+    margin-top: 17px;
+}
+
+.lis_2 input {
+    width: 250px;
+}
+
+.lis_2>a {
+    float: right;
+    font-size: 14px;
+    color: rgb(75, 79, 136)
+}
+
+.lis_3 {
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.lis_3>span {
+    cursor: pointer;
+    float: right;
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.btn {
+    position: absolute;
+    top: 210px;
+    left: 30px;
+    width: 330px;
+    height: 30px;
+    background-color: rgb(0, 132, 255);
+    color: white;
+    text-align: center;
+    border: none;
+}
+
+.loginfooter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 12px;
+    width: 390px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: rgb(246, 246, 246);
+    padding: 10px 15px;
+}
+
+.loginfooter>a {
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    color: #cccccc;
+}
+
+.link {
+    width: 390px;
+    height: 55px;
+    border-radius: 5px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 610px;
+}
+
+.down {
+    cursor: pointer;
+    position: relative;
+    line-height: 35px;
+    text-align: center;
+    width: 390px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 30px;
+    color: rgb(0, 132, 255);
+}
+
+.down::before {
+    position: absolute;
+    top: 4px;
+    left: 115px;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    content: '';
+    background: url('../img/QQ截图20200109101917.png') no-repeat 1px 1px;
+}
+
+.link {
+    vertical-align: middle;
+    line-height: 45px;
+    padding: 0 15px;
+}
+
+.link span {
+    margin-right: 60px;
+}
+
+.link>i {
+    cursor: pointer;
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
+.passlogin {
+    width: 100%;
+    clear: both;
+    height: 25px;
+    display: none;
+}
+
+.icon-xianshimima {
+    margin-left: 70px;
+    font-size: 18px;
+}
+
+.icon-yincang {
+    margin-left: 70px;
+    font-size: 18px;
+}
+
+.erweima {
+    position: absolute;
+    top: 0;
+    right: -2px;
+    cursor: pointer;
+}
+
+.erweima img {
+    width: 50px;
+    height: 50px;
+}
+
+.login-two {
+    display: none;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    background-color: white;
+    height: 330px;
+    width: 390px;
+    margin: 20px auto;
+    padding: 0 15px;
+    box-shadow: 1px 1px 1px azure;
+}
+
+.login-two h2 {
+    font-weight: 400;
+    margin: 40px 0;
+}
+
+.login-two>img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}

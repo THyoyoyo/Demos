@@ -1,0 +1,405 @@
+﻿/*全局*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+ min-width: 1900px;
+
+}
+/*头部*/
+#top{
+    height: 190px;
+    width: 100%;
+    background: #0775dc url("http://www.cqvie.edu.cn/dfiles/12827/images/simages/cqvie/site/img/flower.png");
+
+
+}
+#nav_1{
+    height: 35px;
+
+}
+#nav_1_1{                                    /* <!- 需居中 ->*/
+    width: 875px;
+    float: left;
+
+}
+#nav_1_1 ul li{
+    Display :inline;
+
+
+}#nav_1_1 ul li a{
+    color: white;
+    text-decoration: none;
+    padding-right: 10px;
+    font-size: 15px;
+    border-right: 1px white solid;
+
+}
+.nav_you{
+    margin-left: 30px;
+
+}
+ #nav_1_2{
+     float: left;
+     font-size: 0;
+     margin-top: 4px;
+
+
+ }
+.bt{
+    padding-top: 2px;
+    width:150px;
+    margin-top: 0;
+    height: 20px;
+
+}
+.bt2{
+    height: 26px;
+    width: 50px;
+    background: #A6A7A5;
+    color: white;
+
+}
+#jz{
+    width:1100px ;
+    margin: 0 auto;
+    line-height:35px;
+    height:35px;
+    display:block;
+
+  }
+#nav_c{
+    background-color:rgba(3,76,171,0.4);
+    height: 35px;
+}
+#img_1{
+}
+#img_2{
+    width: 1400px;
+    margin: 5px auto;
+}
+.logo2{
+    float: right;
+    margin-top: 15px;
+}
+/*菜单2*/
+.navbar{
+    width: 100%;
+    height: 50px;
+    position:relative;
+
+}
+.navbar ul{
+    list-style: none;
+
+}
+.navbar ul li{
+    float: left;
+    width: 140px;
+    height: 50px;
+    margin-right: -20px;
+    font-size: 20px;
+
+
+}
+.navbar ul li ul{
+ position: absolute;
+    width: 50px;
+}
+.navbar ul li:hover{
+    color: #fff;
+    animation-delay: 3s;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    text-transform: uppercase;
+
+}
+.navbar ul li ul li{
+    display: none;                              /*功能实现重要部分*/
+    width: 140px;
+    height: 40px;                               /*功能实现重要部分*/
+    float: inside;
+    background: #0775dc;
+    font-size: 20px;
+    transition:0.3s;
+
+
+}
+.navbar ul li:hover ul li{
+    display: block;                                 /*功能实现重要部分*/
+    border-top: 1px solid #0775dc;
+
+}
+#nav_2{
+    width: 1400px;
+    margin: 0 auto;
+}
+/*下面是轮播图*/
+
+#pp{
+    width: 100%;
+    height: 5px;
+    background-color: #ffda0a;
+}
+#img_lb ul li img{
+    width: 1380px;
+    height:360px;
+  }
+#img_lb{
+    width: 100%;
+    height:360px;
+
+}
+#lb{
+    width: 1350px;
+    margin: 0 auto;
+    padding-left: 24px;
+}
+/*主体*/
+#mian{
+    background: #eeefed;
+    width: 1285px;
+    height: 820px;
+    margin: 0 auto;
+    position:relative;
+    left:-22px;
+}
+.p{
+    height: 40px;
+    background: #eeefed;
+}
+#rl_1{
+
+    width: 360px;
+    height: 330px;
+    margin-left:12px;
+    float: left;
+    border: 1px #A6A7A5 solid;
+}
+#rl_2{
+
+    width: 550px;
+    height: 330px;
+    margin-left: 12px;
+    float: left;
+    border: 1px #A6A7A5 solid;
+}
+#rl_3{
+
+    width: 320px;
+    height: 330px;
+    margin-left:12px;
+    float: left;
+    border: 1px #A6A7A5 solid;
+}#rl_4{
+
+    width: 360px;
+    height: 360px;
+    margin:30px 12px;
+    float: left;
+     border: 1px #A6A7A5 solid;
+}
+#rl_5{
+
+    width: 550px;
+    height: 360px;
+    margin: 30px 0;
+    float: left;
+    border: 1px #A6A7A5 solid;
+}
+#rl_6{
+
+    width: 320px;
+    height: 360px;
+    margin: 30px 12px;
+    float: left;
+    border: 1px #A6A7A5 solid;
+}
+.title{
+    height: 40px;
+
+    margin: 0 5px;
+    border-bottom: 2px #A6A7A5 solid;
+    line-height: 40px;
+}
+.title span{
+    float: left;
+    line-height: 40px;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 15px;
+    color: #c7c8c6;
+
+}
+.title h2{
+     float: left;
+    font-size: 20px;
+    font-weight:lighter;
+ }
+.title a{
+    text-decoration: none;
+    float: right;
+    line-height: 40px;
+    color: #BC0000;
+    margin-top: 5px;
+}
+.click{
+    color: white;
+    background: darkblue;
+    height: 40px;
+    border-radius: 10px 10px 0 0;
+    margin-right: 5px;
+    padding: 1px;
+}
+.title_2{
+    height: 40px;
+
+    margin: 0 5px;
+    line-height: 40px;
+}
+.title_2_1{
+   margin-top: 8px;
+}
+.title_2_2{
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.tt{
+
+    width: 320px;
+    height: 145px;
+}
+.aa{
+    margin-top: 5px;
+}
+.tt_2_2{
+    float: left;
+    margin-left: 41px;
+    margin-top: 10px;
+    text-align: center;
+}
+#rl_6 a{
+    text-decoration: none;
+   color: #a8a9a7;
+    font-size:10px;
+}
+/*图片导航*/
+#nav_img{
+    width:1285px;
+    height: 180px;
+    background-color: #eeefed;
+    margin: 0 auto;
+    position:relative;
+    left:-22px;
+}
+#nav_img a{
+    margin-left: 15px;
+}
+#nav_img2{
+    width: 1285px;
+    position:relative;
+    left:-22px;
+    height: 400px;
+    background: #eeefed;
+    margin: 0 auto;
+}
+#nav_img2 a{
+    float: left;
+    margin-left: 65px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+
+}
+#nav_img2 p{
+    position: relative;
+    margin-top: -25px;
+    z-index: 999;
+    background: rgba(188, 0, 0, 0.25);
+}
+#bottom{
+    width: 100%;
+    height: 280px;
+    background: #0787ef url("http://www.cqvie.edu.cn/dfiles/12827/images/simages/cqvie/site/img/bottom_bg.jpg");
+}
+/*页低*/
+#bottom_nav {
+    width: 1285px;
+    position:relative;
+    left:-22px;
+    height: 280px;
+    margin: 0 auto;
+}
+#bottom_nav_a{
+    width: 250px;
+    height: 280px;
+    float: left;
+
+}
+#bottom_nav_a a{
+    color: white;
+    margin-top: 40px;
+    margin-left: 20px;
+    display:inline-block;
+    text-decoration: none;
+}
+#bottom_nav_img{
+    float: left;
+
+    width: 800px;
+    height: 280px;
+}
+#bottom_nav_img img{
+     margin-top: 100px;
+     margin-left: 250px;
+}
+
+#bottom_nav_img_2 img{
+    margin-top: 110px;
+    margin-left: 15px;
+}
+#foot{
+    width: 100%;
+    height: 80px;
+    background: black;
+}
+#foot_1{
+    width: 1285px;
+    left:-22px;
+    height: 80px;
+    margin: 0 auto;
+
+}
+#foot_img{
+    width: 80px;
+    height: 80px;
+
+    float: left;
+}
+#foot_p{
+    float: left;
+    width: 1150px;
+
+}
+#foot_p p{
+    text-align: center;
+    line-height: 35px;
+    color: white;
+}
+#body2{
+    width: 100%;
+    height: 580px;
+    background: white url("http://www.cqvie.edu.cn/dfiles/12827/images/simages/cqvie/site/img/main_bg.jpg ");
+}#body1{
+    width: 100%;
+    height: 360px;
+    background:white url("http://www.cqvie.edu.cn/dfiles/12827/images/simages/cqvie/site/img/page_body_bg.jpg") repeat-x;
+
+}

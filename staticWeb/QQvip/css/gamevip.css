@@ -1,0 +1,254 @@
+a {
+    color: rgb(17, 16, 24);
+}
+
+.chart {
+    width: 100%;
+    background-color: rgb(17, 16, 24);
+    text-align: center;
+    height: 500px;
+}
+
+.gameZone {
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.navgame {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1180px;
+    height: 100px;
+    border: 1px solid #cccccc;
+}
+
+.zonelogo {
+    position: relative;
+    float: left;
+    width: 266px;
+    height: 100px;
+    border-left: 5px rgb(251, 215, 79) solid;
+    border-right: 1px solid #cccccc;
+    background-color: white;
+}
+
+.zonelogo h2 {
+    padding-left: 40px;
+    font-weight: 400;
+    line-height: 100px;
+    text-align: center;
+}
+
+.zonelogo h2::before {
+    position: absolute;
+    top: 30px;
+    left: 16px;
+    content: '';
+    width: 64px;
+    height: 44px;
+    background: url("../images/sprites_game.png") no-repeat 0 -11px;
+}
+
+.zonenav_1 {
+    width: 954px;
+    background-color: rgb(17, 16, 24);
+}
+
+.zonenav_1 ul li {
+    float: left;
+    width: 85px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.zonenav_1 ul li:first-child a {
+    color: rgb(211, 0, 0);
+}
+
+.zonenav_1 ul li:first-child {
+    background-color: white;
+}
+
+.zonenav_1 ul li a {
+    color: rgb(17, 16, 24);
+}
+
+.zonenav_1 ul li ul {
+    width: 200px;
+}
+
+.zonenav_1 ul li ul li {
+    position: relative;
+    background-color: white;
+}
+
+.zonenav_1 ul li ul li a {
+    color: rgb(211, 0, 0);
+}
+
+.zonenav_1 ul li ul li a::after {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: url('../images/sprites_game.png') no-repeat;
+}
+
+
+/* 礼包 */
+
+.gift {
+    margin-top: 50px;
+}
+
+.gifttitie h2 {
+    display: inline-block;
+    width: 200px;
+    font-weight: 400;
+}
+
+.gifttitie {
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+.gifttitie span {
+    float: right;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.giftcontent ul li {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    transition: all 0.2s linear;
+}
+
+.giftcontent ul li p {
+    height: 45px;
+    line-height: 45px;
+    transition: all 0.2s linear;
+}
+
+.giftcontent ul li:hover {
+    background-color: rgb(251, 215, 79);
+}
+
+.giftcontent ul li a:hover p {
+    transform: translate(8px, 0);
+}
+
+
+/* 新抢先玩 */
+
+
+/* 左边 */
+
+.experience {
+    clear: both;
+    padding-top: 40px;
+}
+
+.newgame {
+    float: left;
+    width: 940px;
+}
+
+.newgametitie {
+    margin-bottom: 20px;
+}
+
+.newgametitie h2 {
+    font-weight: 400;
+}
+
+.newrheat {
+    float: left;
+}
+
+.newgamecontent ul li {
+    float: left;
+    margin-right: 10px;
+    transition: all 0.2s linear;
+}
+
+.newgamecontent ul li p {
+    height: 45px;
+    line-height: 45px;
+    transition: all 0.2s linear;
+}
+
+.newgamecontent ul li:hover {
+    background-color: rgb(251, 215, 79);
+}
+
+.newgamecontent ul li a:hover p {
+    transform: translate(8px, 0);
+}
+
+
+/* 右边 */
+
+.newrheattitie {
+    margin-bottom: 27px;
+}
+
+.newrheattitie h3 {
+    font-weight: 400;
+    position: relative;
+}
+
+.newrheattitie h3::before {
+    position: absolute;
+    top: 0;
+    left: 135px;
+    width: 26px;
+    height: 26px;
+    content: '';
+    background: url('../images/sprites_game.png') no-repeat 0 -55px;
+}
+
+.newrheattitie h3::after {
+    position: absolute;
+    top: 0;
+    right: -31px;
+    content: '';
+    width: 26px;
+    height: 26px;
+    background: url('../images/sprites_game.png') no-repeat 0 -81px;
+}
+
+.newrgameheat ul li {
+    width: 160px;
+    margin-top: 13px;
+}
+
+.newrgameheat ul li a {
+    display: block;
+    width: 220px;
+    height: 60px;
+}
+
+.newrgameheat ul li a img {
+    float: left;
+    width: 60px;
+    border-radius: 10px;
+}
+
+.newrgameheat ul li a:hover p {
+    color: rgb(251, 215, 79);
+}
+
+.newrgameheat2 {
+    float: left;
+    margin: 7px 0 0 8px;
+}
+
+.newrgameheat2 p {
+    font-size: 14px;
+}

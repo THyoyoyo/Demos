@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(251, 251, 251);
+    min-width: 1650px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.w {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+
+/*头部导航*/
+
+
+/*LOGO*/
+
+.heard {
+    width: 100%;
+    z-index: 20;
+    height: 90px;
+    background-color: rgb(251, 251, 251);
+}
+
+.logo {
+    float: left;
+    width: 145px;
+    height: 90px;
+}
+
+.logo img {
+    width: 145px;
+}
+
+
+/*导航栏*/
+
+.nav {
+    float: left;
+    height: 90px;
+    margin-left: 50px;
+    line-height: 90px;
+}
+
+.nav ul li {
+    float: left;
+    margin-right: 30px;
+}
+
+.nav ul li a {
+    color: black;
+    transition: all 0.2s;
+}
+
+.nav ul li a:hover {
+    color: #BC0000;
+}
+
+
+/*登录*/
+
+.open a,
+.login a {
+    float: right;
+    border: 1px #fbd74f solid;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 45px;
+    margin-top: 20px;
+    transition: all 0.2s;
+}
+
+.login a {
+    width: 100px;
+    color: #fbd74f;
+    margin-left: 30px;
+}
+
+.login a:hover {
+    background-color: rgb(255, 231, 139);
+    color: #986b0d;
+}
+
+.open a {
+    width: 140px;
+    margin-left: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #986b0d;
+    background-color: #fbd74f;
+}
+
+.open a:hover {
+    background-color: rgb(255, 231, 139);
+}
+
+
+/*链接*/
+
+.link {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(48, 47, 55);
+    clear: both;
+}
+
+.link .w ul li {
+    text-align: center;
+    float: left;
+    width: 100px;
+    height: 130px;
+    /*background-color: #63b7ff;*/
+    margin: 70px 0 0 2px;
+}
+
+.link .w ul li:nth-child(1) {
+    margin-left: 300px;
+}
+
+.link .w ul li span {
+    display: block;
+    width: 100px;
+    height: 85px;
+    background-color: #BC0000;
+}
+
+.link .w ul li p {
+    color: rgb(108, 107, 112);
+    font-size: 14px;
+}
+
+.link .w ul li:nth-child(1) span {
+    background: url("../images/sprites_footer.png") no-repeat 0 0;
+}
+
+.link .w ul .link1 :hover {
+    background-position: -100px 0;
+}
+
+.link .w ul li:nth-child(2) span {
+    background: url("../images/sprites_footer.png") no-repeat 0 -100px;
+}
+
+.link .w ul .link2 :hover {
+    background-position: -100px -100px;
+}
+
+.link .w ul li:nth-child(3) span {
+    background: url("../images/sprites_footer.png") no-repeat 0 -200px;
+}
+
+.link .w ul .link3 :hover {
+    background-position: -100px -200px;
+}
+
+.link .w ul li:nth-child(4) span {
+    background: url("../images/sprites_footer.png") no-repeat 0 -300px;
+}
+
+.link .w ul .link4 :hover {
+    background-position: -100px -300px;
+}
+
+.link .w ul li:nth-child(5) span {
+    background: url("../images/sprites_footer.png") no-repeat 0 -400px;
+}
+
+.link .w ul .link5 :hover {
+    background-position: -100px -400px;
+}
+
+.link .w ul li:nth-child(6) span {
+    background: url("../images/sprites_footer.png") no-repeat 0 -500px;
+}
+
+.link .w ul .link6 :hover {
+    background-position: -100px -500px;
+}
+
+.link .w ul li:nth-child(7) span {
+    background: url("../images/sprites_footer.png") no-repeat 0 -600px;
+}
+
+.link .w ul .link7 :hover {
+    background-position: -100px -600px;
+}
+
+
+/*底部*/
+
+.link {}
+
+.foot {
+    width: 100%;
+    background-color: rgb(48, 47, 55);
+    clear: both;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(150, 149, 142);
+    padding-top: 50px;
+    padding-bottom: 20px;
+}

@@ -1,0 +1,286 @@
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+.focus {
+    width: 721px;
+    height: 455px;
+    float: left;
+}
+
+.newflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+
+.news {
+    height: 165px;
+    border: 1px #e4e4e4 solid;
+}
+
+.news-hd {
+    height: 33px;
+    border-bottom: 1px dotted #e4e4e4;
+    line-height: 33px;
+    padding: 0 15px;
+}
+
+.news-hd h5 {
+    float: left;
+    ;
+    font-size: 16px;
+}
+
+.news-hd .more {
+    float: right;
+}
+
+.news-hd .more::after {
+    font-family: 'icomoon';
+    content: '\e920';
+    margin-left: 5px;
+}
+
+.lifeservice {
+    height: 209px;
+    /*background-color: sandybrown;*/
+}
+
+.bargain {
+    margin-top: 5px;
+}
+
+.news-bd {
+    padding: 5px 15px 0;
+}
+
+.news-bd ul li {
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.lifeservice {
+    height: 209px;
+    border: 1px #e4e4e4 solid;
+    border-top: 0;
+    overflow: hidden;
+}
+
+.lifeservice ul {
+    width: 252px;
+}
+
+.lifeservice ul li {
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px #e4e4e4 solid;
+    border-bottom: 1px #e4e4e4 solid;
+    text-align: center;
+    position: relative;
+}
+
+.lifeservice ul li i {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    background-color: #bb1111;
+    margin-top: 12px;
+}
+
+.lifeservice ul li img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/*推荐模块*/
+
+.recom {
+    height: 163px;
+    background-color: #ebebeb;
+    margin-top: 12px;
+}
+
+.recom_hd {
+    float: left;
+    width: 205px;
+    height: 163px;
+    background-color: #5c5251;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.recom_bd {
+    float: left;
+}
+
+.recom_bd ul li {
+    float: left;
+    position: relative;
+}
+
+.recom_bd ul li img {
+    width: 248px;
+    height: 163px;
+}
+
+.recom_bd ul li:nth-child(-n+3)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 145px;
+    background-color: #cccccc;
+}
+
+
+/*家用电器*/
+
+.floor .w {
+    margin-top: 30px;
+}
+
+.box_hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+
+.tab_list {
+    float: right;
+    height: 30px;
+    line-height: 30px;
+}
+
+.tab_list ul li {
+    float: left;
+}
+
+.tab_list ul li a {
+    margin: 0 15px;
+}
+
+.box_bd {
+    height: 361px;
+}
+
+.tab_list_item>div {
+    float: left;
+}
+
+.col_210 {
+    width: 210px;
+    height: 361px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px #cccccc solid;
+    line-height: 34px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.col_329 {
+    width: 329px;
+}
+
+.col_211 {
+    width: 211px;
+    border-right: 1px solid #cccccc;
+}
+
+.col_221 {
+    width: 221px;
+    border-right: 1px solid #cccccc;
+}
+
+.col_219 {
+    width: 219px;
+}
+
+.bb {
+    border-bottom: 1px solid #cccccc;
+}
+
+
+/* ---------------广告轮播图---------------- */
+
+.focus {
+    overflow: hidden;
+    position: relative;
+}
+
+.focus ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600%;
+    z-index: -1;
+}
+
+.focus ul li {
+    float: left;
+}
+
+.upbtn {
+    position: absolute;
+    top: 220px;
+    left: 0;
+    font-size: 30px;
+    color: black;
+    display: none;
+}
+
+.downbtn {
+    position: absolute;
+    top: 220px;
+    right: 0;
+    font-size: 30px;
+    color: black;
+    display: none;
+}
+
+.focus ol {
+    position: absolute;
+    top: 420px;
+    left: 80px;
+}
+
+.focus ol li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border: white solid 1px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.focus a {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.bj {
+    background-color: white;
+}

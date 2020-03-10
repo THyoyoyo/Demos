@@ -1,0 +1,272 @@
+/*字体声明*/
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?tomleg');
+    src:  url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+    url('../fonts/icomoon.woff?tomleg') format('woff'),
+    url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+/*版心*/
+.w{
+    width: 1200px;
+    margin: 0 auto;
+}
+/*浮动*/
+.f1{
+    float: left;
+}
+.f2{
+    float: right;
+}
+/*字体颜色红色*/
+.style_red{
+    color: #c81623;
+}
+/*快捷导航*/
+.shortcut{
+    height: 31px;
+    background-color: #f1f1f1;
+    line-height: 31px;
+}
+.shortcut li{
+    float: left;
+}
+.shortcut .f2 li:nth-child(even){
+    width: 1px;
+    height: 12px;
+    background-color: #666666;
+    margin: 9px 15px 0;
+}
+.arrow-icon::after{
+    font-family: 'icomoon';
+    content:'\e91e';
+    margin-left: 6px;
+}
+/*头部*/
+.header{
+    height: 105px;
+    position: relative;
+}
+/*logo制作*/
+.logo{
+    width:171px ;
+    height:61px;
+    position: absolute;
+    top: 25px;
+}
+.logo a{
+    display:block;
+    width: 171px;
+    height: 61px;
+    background: url("../images/logo.png")no-repeat;
+    font-size: 0;
+}
+/*搜索框*/
+.search{
+    position: absolute;
+    left: 346px;
+    top: 25px;
+    width: 538px;
+    height: 36px;
+    border:2px  #c81623 solid;
+}
+.search input{
+    width: 454px;
+    height: 32px;
+    padding-left: 10px;
+    float: left;
+}
+.search button{
+    width: 80px;
+    height: 32px;
+    background-color: #c81623;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+}
+/*热点词汇*/
+.hotword{
+    position: absolute;
+    left: 346px;
+    top: 66px;
+}
+.hotword a{
+    margin-left: 20px;
+}
+/*购物车模块*/
+.shopcar{
+    position: absolute;
+    right: 60px;
+    top: 25px;
+    width: 140px;
+    height: 35px;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+    line-height: 35px;
+    text-align: center;
+}
+.shopcar::before{
+    content: '\e93a';
+    font-family: 'icomoon';
+    margin-left: 5px;
+    color: #bb1111;
+}
+.shopcar::after{
+    content: '\e920';
+    font-family: 'icomoon';
+    margin-right: 10px;
+}
+/*购物车数量*/
+.count{
+    position: absolute;
+    top: -5px;
+    left: 100px;
+    line-height: 14px;
+    height: 14px;
+    color: #f7f7f7;
+    background-color: red;
+    padding: 0 5px;
+    border-radius: 7px 7px 7px 0;
+
+}
+/*nav导航*/
+.nav{
+    height: 47px;
+    border-bottom: 2px #b1191a solid;
+}
+.nav .dropdown{
+    float: left;
+    width: 210px;
+    height: 45px;
+    background-color:#b1191a ;
+}
+.nav .navitems{
+    float: left;
+}
+/*全部分类导航*/
+.dropdown .dt{
+    width: 100%;
+    height: 100%;
+    color: #f7f7f7;
+    line-height: 45px;
+    text-align: center;
+    font-size: 16px;
+}
+.dropdown .dd{
+    width: 210px;
+    height: 465px;
+    background-color: #d10000;
+    margin-top: 2px;
+
+}
+/*.dropdown:hover .dd{*/
+/*    display: block;*/
+/*}*/
+.dropdown .dd ul li{
+    height: 31px;
+    line-height: 31px;
+    margin-left: 2px;
+    padding-left: 10px;
+    transition: background-color 0.2s;
+    position: relative;
+}
+.dropdown .dd ul li:hover{
+    background-color:#ffffff ;
+}
+.dropdown .dd ul li::after{
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    font-family: 'icomoon';
+    content: '\e920';
+    color: #ffffff;
+}
+.dropdown .dd ul li a{
+    font-size: 14px;
+    color: #ffffff;
+    transition: color 0.2s;
+}
+.dropdown .dd ul li:hover a{
+    color: #bb1111;
+}
+/*单独分类导航*/
+.navitems ul li {
+    float: left;
+}
+.navitems ul li a{
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 25px;
+}
+/*底部模块*/
+footer{
+    height: 415px;
+    background-color: #f5f5f5;
+    padding-top: 30px
+}
+.mod_service{
+    height: 80px;
+    border-bottom: 1px solid #cccccc;
+}
+.mod_service ul li {
+    float: left;
+    width: 240px;
+    height: 50px;
+    padding-left: 35px;
+}
+.mod_service ul li h5 {
+    float: left;
+    width: 50px;
+    height:50px;
+    /*background:url("../images/icons.png") no-repeat -252px -2px;*/
+    margin-right: 8px;
+}
+.service_txt h4{
+    font-size: 14px;
+}
+.service_txt p{
+    font-size: 12px;
+}
+/*mod_help模块*/
+.mod_help{
+    height: 185px;
+    border-bottom: 1px solid #cccccc;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.mod_help dl{
+    float: left;
+    width: 200px;
+}
+.mod_help dl:last-child{
+    width: 90px;
+    text-align: center;
+}
+.mod_help dl dt{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+/*版权*/
+.mod_copyright{
+    text-align: center;
+    padding-top: 20px;
+}
+.links{
+    margin-bottom: 20px;
+}
+.links a{
+    margin: 0 15px;
+}
+.copyright{
+    line-height: 20px;
+}
+
+
+body{
+    min-width: 1200px;
+}

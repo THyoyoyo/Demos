@@ -1,0 +1,124 @@
+/*列表页*/
+.nav{
+    overflow: hidden;
+}
+.sk{
+    position: absolute;
+    left: 190px;
+    top: 35px;
+    border-left: 1px #c81623 solid;
+    height: 40px;
+    width: 70px;
+    text-align: center;
+    line-height: 40px;
+    padding-left: 5px;
+}
+.sk_list{
+    float: left;
+}
+.sk_list ul li {
+    float: left;
+}
+.sk_list ul li a{
+    display: block;
+    line-height: 47px;
+    padding:0 30px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.sk_con{
+    float: left;
+}
+.sk_con ul li {
+    float: left;
+}
+.sk_con ul li a {
+    display: block;
+    line-height: 52px;
+    padding:0 20px;
+    font-size: 14px;
+}
+.sk_con ul li:last-child a::after{
+    font-family: 'icomoon';
+    content: '\e91e';
+}
+.sk_bd ul li{
+    float: left;
+    width: 290px;
+    height: 460px;
+    border: 1px transparent solid;
+    margin-right:13px;
+    margin-top:10px;
+
+}
+
+.sk_bd ul li:hover{
+    border: 1px #c81623 solid;
+}
+.sk_bd ul li:nth-child(4n){
+    margin: 10px 0;
+}
+/*商品详情*/
+.sk_bd_spimages{
+    text-align: center;
+    height: 280px;
+    line-height: 280px;
+}
+.sk_bd h5{
+    font-size: 12px;
+    font-weight: 400;
+
+}
+.sk_dd_xq{
+    height: 40px;
+    padding-top: 5px;
+}
+.sk_dd_xq i{
+    color: #c81623;
+    font-size: 22px;
+    font-weight: 700;
+}
+.sk_dd_xq span{
+    font-weight: 700;
+    font-size: 16px;
+    color: #8b8b8b;
+    text-decoration:line-through;
+
+}
+.sk_dd_sl{
+    height: 50px;
+    text-align: center;
+    padding-top: 8px;
+
+}
+.sk_dd_sl i{
+    display: inline-block;
+    width: 120px;
+    height: 10px;
+    border: 1px red solid;
+    border-radius: 10px;
+}
+.sk_dd_sl i span{
+    height: 9px;
+    width: 80px;
+    background-color: red;
+    display: block;
+    border-radius: 10px;
+
+}
+.qianggou{
+    text-align: center;
+}
+.qianggou a{
+    display: block;
+    width: 289px;
+    height: 53px;
+    background-color: #c81623;
+    text-align: center;
+    line-height: 53px;
+    color: white;
+    font-size: 20px;
+}
+body{
+    min-width: 1200px;
+}
